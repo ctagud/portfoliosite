@@ -1,0 +1,415 @@
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;600;700&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;800&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;  
+    background-color: #f9f9f9;
+
+      /*
+    background-image: url('assets/Actions\ -\ Hero\ Background.svg');
+    background-size: cover; 
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
+
+.scroll {
+    scroll-behavior: smooth;
+
+}
+h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;   
+}
+
+.list-unstyled a{
+    color: white;
+}
+
+.nav-item a:hover {
+    color: rgb(184, 184, 184);
+}
+p{ 
+    font-weight: 300 ;
+}
+
+a {
+    text-decoration: none;
+}
+
+.testimonials p {
+    font-weight: 400;
+}
+.nav {
+    background-color: transparent;
+}
+
+.content {
+    text-align: start;
+}
+
+section{
+    padding: 60px 0px 60px 0px;
+  }
+
+.timeline p{
+    margin: 0;
+    font-size: 15px;
+    box-sizing: border-box;
+    color: rgba(51, 51, 51, 0.7);
+    font-weight: normal;
+    line-height: 25px;
+}
+
+.timeline h3 {
+    margin: -10px 0 0 0;
+    font-size: 30px;
+    transition: .4s;
+    padding: 0 10px;
+    font-weight:400;
+    box-sizing: border-box;
+}
+
+.content img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.image-column {
+    order: 2;
+}
+
+
+.small-image {
+max-height: 40rem; /* Adjust the max-height as needed */
+}
+
+
+
+
+/* new stuff */
+
+
+
+
+    .box:hover img {
+      opacity: 0.8; /* Change opacity on hover */
+    cursor: pointer; /* Set default cursor */
+
+    }
+
+.timeline ul li {
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    overflow: hidden; /* Add overflow to contain floated elements */
+}
+
+.timeline ul li img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .4);
+
+}
+
+
+.timeline ul li:nth-child(odd) {
+    float: left;
+    text-align: right;
+    clear: both;
+}
+
+.timeline ul li:nth-child(even) {
+    float: right;
+    text-align: left;
+    clear: both;
+}
+
+
+.timeline {
+    position: relative;
+    margin: 50px auto;
+    padding: 40px 0px;
+    width: 900px;
+    box-sizing: border-box;
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 1.7px;
+    height: 100%;
+    /* CHANGES LINE COLOR
+        background: #0D01E8
+ */
+ background:rgb(36, 33, 33);
+
+}
+
+.timeline ul li {
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.timeline ul li:nth-child(odd) {
+    float: left;
+    text-align: right;
+    clear: both;
+}
+
+.timeline ul li:nth-child(even) {
+    float: right;
+    text-align: left;
+    clear: both;
+}
+
+
+
+/*
+.timeline ul li:nth-child(odd):before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 24px;
+    right: -6px;
+    background: #0d6efd;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #1C38BB
+}
+
+.timeline ul li:nth-child(even):before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 24px;
+    left: -4px;
+    background: #0d6efd;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #1C38BB;
+}
+
+*/
+
+.timeline ul li h3 {
+    padding: 0;
+    margin: 0;
+}
+
+
+.timeline ul li .time h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.timeline ul li:nth-child(odd) .time {
+    position: absolute;
+    top: 12px;
+    right: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #0d6efd;
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px #1C38BB;
+}
+
+.timeline ul li:nth-child(even) .time {
+    position: absolute;
+    top: 12px;
+    left: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #0d6efd;
+    color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px #1C38BB;
+}
+
+@media(max-width:1000px) {
+    .timeline {
+        width: 100%;
+    }
+}
+
+@media(max-width:767px) {
+    .timeline {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+  
+
+    .timeline:before {
+        left: 20px;
+        height: 100%;
+    }
+
+    .timeline ul li:nth-child(odd),
+    .timeline ul li:nth-child(even) {
+        width: 100%;
+        text-align: left;
+        padding-left: 50px;
+        padding-bottom: 50px;
+    }
+
+    .timeline ul li:nth-child(odd):before,
+    .timeline ul li:nth-child(even):before {
+        top: -18px;
+        left: 16px;
+    }
+
+    .timeline ul li:nth-child(odd) .time,
+    .timeline ul li:nth-child(even) .time {
+        top: -30px;
+        left: 50px;
+        right: inherit;
+    }
+}
+
+.timeline ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* Add this style for the blur effect */
+.blur {
+    filter: blur(5px); /* You can adjust the blur strength as needed */
+    transition: filter 0.5s ease; /* Adding transition for smooth effect */
+}
+
+
+/* new stuff */
+
+
+header {
+    background-image: url("assets/ibcs.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 130vh;
+    position: relative;
+    z-index: 1;
+  }
+
+  .home1 {
+    background-image: url("assets/back.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 80vh;
+    position: relative;
+    z-index: 1;
+  }
+  
+
+  
+/* ////////////////////////////////// */
+/* ////////////////////////////////// */
+.box {
+  position: relative;
+  overflow: hidden; /* Added overflow: hidden to hide the text initially */
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.box img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  height: 50vh;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  width: 100%;
+
+}
+
+.box .overlay {
+  position: absolute;
+  background: rgba(24, 23, 23, 0.7);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.24s ease; /* Only transition opacity for smoother performance */
+}
+
+.box:hover .overlay {
+  opacity: 1;
+}
+
+.box .text {
+  color: white;
+  opacity: 0;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: opacity 0.2s ease-in-out; /* Only transition opacity for smoother performance */
+}
+
+.box:hover .text {
+  opacity: 1;
+}
+
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  /* Progress Bar */
+
+
+  .progress-container {
+    background-color: #e6e6e6;
+    height: 10px;
+    width: 100%;
+  }
+  
+  .progress-bar {
+    background-color: #1C38BB;
+    height: 10px;
+    width: 0%;
+  }
+
+  .navbar {
+    position: sticky;
+    z-index: 999;
+    top: -10px;
+	background: #fff;
+	-webkit-box-shadow:  0px 0px 10px 0px rgba(51, 51, 51, 0.2);
+    
+  box-shadow: 3px 0px 8px 0px rgba(48,48,48,.07));
+
+  /* 11px 15px 29px 0 rgba(48,48,48,.07) */
+  }
+
+  .content {
+    padding: 2em;
+  }
+
