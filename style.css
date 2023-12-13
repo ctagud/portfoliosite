@@ -303,6 +303,11 @@ header {
     position: relative;
     z-index: 1;
   }
+  
+  .shadow {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  }
 
   .home1 {
     background-image: url("assets/back.png");
